@@ -26,7 +26,7 @@ ipcMain.on(IPCEvents.MAKE_REQUESTS, (event, data) => {
 
 const SCRIPT_URL = (() => {
     switch (ENV) {
-        case "production": return "https://strencher.github.io/BdBrowser/dist/frontend.js";
+        case "production": return "https://cdn.statically.io/gh/m3t4f1v3/BdBrowser/master/dist/frontend.js";
         case "development": return "http://127.0.0.1:5500/frontend.js";
         default: throw new Error("Unknown Environment")
     }
