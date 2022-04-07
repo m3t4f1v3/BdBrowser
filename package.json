@@ -12,7 +12,7 @@
     "build-backend": "cd ./backend && webpack --env=type=backend --env=mode=production --config=../webpack.config.js",
     "build-backend-dev": "cd ./backend && webpack --env=type=backend --env=mode=development --config=../webpack.config.js",
     "prod": "npm run build-frontend && npm run build-backend && echo Finished Build",
-    "prod-dev": "npm run build-frontend-dev && npm run build-backend-dev && echo Finished Build (Dev)",
+    "prod-dev": "npm run build-frontend-dev && npm run build-backend-dev && echo Finished Build '(Dev)'",
     "host": "node ./scripts/host.js"
   },
   "author": "Strencher",
